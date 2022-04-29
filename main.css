@@ -1,0 +1,965 @@
+#wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+
+
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #074388;
+    font-size: 18px;
+    background-color: #FFF8EE;
+
+
+}
+
+
+
+
+h1 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.planet-flavia {
+    width: 25vw;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+
+/* STARRY SKY - CLOUDS --------  */
+
+.stars-sky-left {
+    width: 2.5%;
+    position: absolute;
+    top: 12vw;
+    left: 31vw;
+
+    animation-iteration-count: infinite;
+}
+
+
+
+#stars-1-left {
+    position: relative;
+    left: 3vw;
+    width: 80%;
+
+    animation: shining 4s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 4s infinite;
+    /* Safari 4+ */
+    -moz-animation: shining 4s infinite;
+    /* Fx 5+ */
+    -o-animation: shining 4s infinite;
+    /* Opera 12+ */
+}
+
+
+#stars-2-left {
+    position: relative;
+    left: -3vw;
+    top: 1vw;
+
+    animation: shining 3s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 3s infinite;
+    -moz-animation: shining 3s infinite;
+    -o-animation: shining 3s infinite;
+}
+
+
+#stars-3-left {
+    position: relative;
+    left: 1vw;
+    top: 3vw;
+
+    animation: shining 2s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 2s infinite;
+    -moz-animation: shining 2s infinite;
+    -o-animation: shining 2s infinite;
+}
+
+
+
+
+
+
+
+
+
+.stars-sky-right {
+    width: 2%;
+    position: absolute;
+    top: 12vw;
+    left: 67vw;
+
+    animation-iteration-count: infinite;
+
+}
+
+
+
+#stars-1-right {
+    position: relative;
+    left: -2vw;
+    top: 1vw;
+    width: 80%;
+
+    animation: shining 4s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 4s infinite;
+    -moz-animation: shining 4s infinite;
+    -o-animation: shining 4s infinite;
+}
+
+
+#stars-2-right {
+    position: relative;
+    left: -3vw;
+    top: 5vw;
+
+    animation: shining 3s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 3s infinite;
+    -moz-animation: shining 3s infinite;
+    -o-animation: shining 3s infinite;
+}
+
+
+#stars-3-right {
+    position: relative;
+    left: 2vw;
+    top: -1vw;
+
+    animation: shining 2s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 2s infinite;
+    -moz-animation: shining 2s infinite;
+    -o-animation: shining 2s infinite;
+}
+
+
+#stars-4-right {
+    width: 50%;
+    position: relative;
+    left: -3vw;
+    top: -4vw;
+
+    animation: shining 2s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 2s infinite;
+    -moz-animation: shining 2s infinite;
+    -o-animation: shining 2s infinite;
+}
+
+
+
+
+
+
+@keyframes shining {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+@-webkit-keyframes shining {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@-moz-keyframes shining {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@-o-keyframes shining {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+/* animated clouds ------------ */
+
+.clouds {
+    width: 95vw;
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#cloud1 {
+    position: relative;
+    width: 45vw;
+
+}
+
+
+#cloud2 {
+    position: relative;
+    width: 45vw;
+
+}
+
+
+
+
+/* NAVBAR---------------------------- */
+
+ul.navbar {
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 30px;
+    position: relative;
+    top: -90px;
+
+}
+
+
+
+a#nav-blog {
+    text-decoration: underline;
+}
+
+
+a#nav-about {
+    text-decoration: none;
+}
+
+
+a#nav-contacts {
+    text-decoration: none;
+}
+
+
+
+a:visited,
+a:hover,
+a:focus {
+    color: #074388;
+}
+
+
+
+
+/* NAVBAR UNDERLINE ANIMATION  */
+
+.underline {
+    position: relative;
+}
+
+.underline:hover {
+    cursor: pointer;
+}
+
+.underline:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #074388;
+    transition: 300ms;
+}
+
+.underline:hover:after {
+    width: 100%;
+
+}
+
+.underline:not(:hover):after {
+    right: 0;
+    left: auto;
+}
+
+
+
+
+
+/* ARTICLE CARDS ------- */
+
+
+.article-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 85%;
+    margin: 0 auto;
+    align-content: stretch;
+}
+
+
+.article-card {
+    background: white;
+    border-radius: 25px;
+    transition: 0.3s;
+
+    position: relative;
+    width: 320px;
+    /*    height: 420px;*/
+    min-height: 480px;
+
+    margin: 20px;
+
+    box-shadow: 0 4px 20px 0 rgba(249, 195, 88, 0.3);
+
+
+
+}
+
+
+
+.article-card a {
+    /*    border: solid 1px yellow;*/
+    display: block;
+    height: 480px;
+}
+
+
+.article-card a:hover,
+.article-card a:active,
+.article-card a:link {
+    text-decoration: none;
+
+}
+
+
+
+.article-card:hover {
+    box-shadow: 0 4px 20px 0 rgba(249, 195, 88, 0.9);
+    cursor: pointer;
+}
+
+
+
+.article-image {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.article-content {
+    padding: 25px;
+    line-height: 1.5rem;
+
+}
+
+
+.article-content h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+
+.article-content p {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/* CONTACT SECTION - FOOTER --------------  */
+
+
+footer {
+    position: absolute;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+
+    height: 320px;
+    background-color: #113451;
+    color: #FFF8EE;
+    overflow: hidden;
+
+    margin-top: 50px;
+
+}
+
+
+
+.contacts {
+    position: relative;
+    padding: 30px;
+
+    top: 1vh;
+}
+
+
+
+.contacts h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 9;
+    margin-bottom: -10px;
+}
+
+
+
+
+
+.contacts ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.contacts li {
+    padding: 10px;
+    margin-left: -30px;
+    font-size: 16px;
+}
+
+
+footer a,
+footer a:active,
+footer a:hover,
+footer a:visited {
+    color: #FFF8EE;
+    text-decoration: none;
+}
+
+
+
+.contacts-img {
+    width: 20%;
+    height: 230px;
+    position: relative;
+    left: 0;
+    top: 5vw;
+}
+
+
+
+
+
+
+
+/* GO UP BUTTON --------------------- */
+
+#btn-up {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #074388;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px 0 rgba(249, 195, 88, 0.7);
+}
+
+#btn-up:hover {
+    background-color: rgb(249, 195, 88);
+
+}
+
+
+
+
+
+
+
+/* MEDIA QUERY --------------------- */
+
+
+/* smartphones media query */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    body {}
+
+
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: -65vw;
+    }
+
+
+
+    /* title - starry planet--- */
+
+    h1 {
+        font-size: 35px;
+    }
+
+
+    .planet-flavia {
+        width: 70%;
+    }
+
+
+    .stars-sky-left {
+        width: 5%;
+        position: relative;
+        top: -35vw;
+        left: 5vw;
+    }
+
+
+    .stars-sky-right {
+        width: 5%;
+        position: relative;
+        top: -55vw;
+        left: 85vw;
+    }
+
+
+    #stars-2-right,
+    #stars-4-right {
+        position: relative;
+        top: -14vw;
+        left: 5vw;
+    }
+
+    #stars-4-right {
+        left: -5vw;
+    }
+
+
+    #stars-2-right {
+        top: -10vw;
+        left: -8vw;
+    }
+
+
+    .clouds {
+        width: 100vw;
+        overflow: hidden;
+
+        position: relative;
+        top: -55vw;
+        margin-bottom: 25px;
+
+
+
+
+    }
+
+
+    #cloud1 {
+        width: 60vw;
+    }
+
+
+    #cloud2 {
+        width: 60vw;
+    }
+
+
+
+    /*
+    @keyframes clouds {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-20px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+*/
+
+
+
+    /* nav bar--- */
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+        transform: translate(0, -150px);
+
+
+    }
+
+
+    #nav-blog,
+    #nav-about,
+    #nav-contacts {}
+
+
+    .navbar li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 5px;
+        width: 300px;
+
+
+        background-color: RGBA(110, 162, 214, 0.6);
+        border-radius: 15px;
+    }
+
+
+
+
+    /* articles ---- */
+
+    .article-container {
+        margin: 0 auto;
+        position: relative;
+        top: -60vw;
+        grid-template-rows: 27% 27%;
+
+    }
+
+
+    .article-card {
+        box-shadow: 9px 9px 20px -1px rgba(249, 195, 88, 0.6);
+        min-height: 500px;
+        min-width: 80vw;
+    }
+
+
+    .article-content {
+        font-size: 1.2rem;
+        line-height: 1.3em;
+    }
+
+
+
+
+
+    /* contact section ---- */
+
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+        height: 350px;
+    }
+
+
+
+
+    .contacts {
+        position: relative;
+        top: 7vh;
+        padding: 25px;
+    }
+
+
+    .contacts ul {
+        font-size: 21px;
+    }
+
+    .contacts li {
+        padding: 10px;
+    }
+
+
+
+    .contacts-img {
+        width: 50%;
+        position: relative;
+        margin: 0 auto;
+        top: -30vw;
+        left: 15vw;
+        height: 140px;
+
+    }
+
+
+
+
+
+
+    /* up button ---- */
+
+    #btn-up {
+        color: #113451;
+        font-weight: 600;
+        background-color: rgb(249, 195, 88);
+    }
+
+
+
+
+}
+
+
+
+
+
+/* Medium devices - landscape tablets */
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+
+    .planet-flavia {
+        width: 40%;
+        ;
+    }
+
+
+
+    .stars-sky-left {
+        width: 4%;
+        position: relative;
+        top: -20vw;
+        left: 20vw;
+    }
+
+
+    .stars-sky-right {
+        width: 4%;
+        position: relative;
+        top: -35vw;
+        left: 75vw;
+
+    }
+
+
+    #stars-3-right {
+        top: -3vw;
+    }
+
+    #stars-4-right {
+        top: -9vw;
+    }
+
+
+
+    .clouds {
+        position: relative;
+        top: -35vw;
+    }
+
+
+    #cloud1,
+    #cloud2 {}
+
+
+    ul.navbar {
+        font-size: 2em;
+        top: -30vw;
+    }
+
+
+    #nav-blog,
+    #nav-about,
+    #nav-contacts {}
+
+
+
+
+    .article-container {
+        width: 90%;
+        position: relative;
+        top: -20vw;
+    }
+
+
+    .article-card {
+        width: 320px;
+        min-height: 530px;
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
+    .article-content {
+        font-size: 1.3em;
+        line-height: 1.3;
+    }
+
+
+
+
+
+
+    .footer-section {
+        margin-top: -90px;
+    }
+
+
+    .contacts {
+        top: -3vh;
+    }
+
+    .contacts h2 {
+        font-size: 2em;
+    }
+
+    .contacts li {
+        font-size: 1.3em;
+    }
+
+
+    .contacts-img {
+        width: 35%;
+        top: 10vw;
+    }
+
+
+
+}
+
+
+
+/* For Large Screens */
+
+@media screen and (min-width: 1550px) {
+
+    #wrapper {
+        max-width: 1550px;
+        overflow: hidden;
+    }
+
+
+
+    .clouds {
+        max-width: 40vw;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+
+    .article-card {
+        min-height: 44vh;
+        min-width: 19vw;
+        max-width: 20vw;
+    }
+
+
+    .article-card h3 {
+        font-size: 1.3em;
+        line-height: 1.2;
+    }
+
+
+    .article-card p {
+        font-size: 1.3em;
+    }
+
+
+
+
+    .contacts {
+        top: -2vh;
+    }
+
+
+    .contacts h2 {
+        font-size: 1.7em;
+    }
+
+
+    .contacts li {
+        font-size: 1.2em;
+    }
+
+
+
+
+    #btn-up {
+        font-size: 1.5em;
+    }
+
+
+
+
+
+
+}

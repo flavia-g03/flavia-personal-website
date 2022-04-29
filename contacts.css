@@ -1,0 +1,1292 @@
+#wrapper {
+    width: 100%;
+    max-width: 1445px;
+    margin: 0 auto;
+
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #074388;
+    font-size: 18px;
+    background-color: #FFF8EE;
+
+}
+
+
+
+
+h1 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+
+/* STARRY SKY -------------------------- */
+
+.stars-sky-left {
+    width: 2%;
+    position: absolute;
+    top: 40px;
+    left: 500px;
+
+}
+
+
+.stars-sky-right {
+    width: 2%;
+    position: absolute;
+    top: 40px;
+    left: 980px;
+}
+
+
+
+#star-1-left {
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+
+    animation: shining 4s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 4s infinite;
+    -moz-animation: shining 4s infinite;
+    -o-animation: shining 4s infinite;
+
+}
+
+#star-2-left {
+    width: 30px;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+
+    animation: shining 2.5s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 2.5s infinite;
+    -moz-animation: shining 2.5s infinite;
+    -o-animation: shining 2.5s infinite;
+}
+
+#star-3-left {
+    width: 20px;
+    position: absolute;
+    left: 30px;
+
+    animation: shining 2s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 2s infinite;
+    -moz-animation: shining 2s infinite;
+    -o-animation: shining 2s infinite;
+}
+
+
+
+
+#star-1-right {
+    position: absolute;
+    top: 50px;
+
+    animation: shining 4s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 4s infinite;
+    -moz-animation: shining 4s infinite;
+    -o-animation: shining 4s infinite;
+}
+
+#star-2-right {
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    left: 40px;
+
+    animation: shining 2s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 2s infinite;
+    -moz-animation: shining 2s infinite;
+    -o-animation: shining 2s infinite;
+
+}
+
+#star-3-right {
+    position: absolute;
+    width: 25px;
+    left: -20px;
+
+    animation: shining 3s;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: shining 3s infinite;
+    -moz-animation: shining 3s infinite;
+    -o-animation: shining 3s infinite;
+
+}
+
+
+
+/* STARRY SKY ANIMATION ------------------ */
+
+@keyframes shining {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@-webkit-keyframes shining {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@-moz-keyframes shining {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@-o-keyframes shining {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+/* NAVBAR---------------------------- */
+
+ul.navbar {
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+
+    z-index: 10;
+
+}
+
+
+
+a:link,
+a:visited,
+a:hover,
+a:focus {
+    color: #074388;
+}
+
+
+
+a#nav-blog {
+    text-decoration: none;
+}
+
+
+a#nav-about {
+    text-decoration: none;
+}
+
+
+a#nav-contacts {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* NAVBAR UNDERLINE ANIMATION  */
+
+.underline {
+    position: relative;
+}
+
+.underline:hover {
+    cursor: pointer;
+}
+
+.underline:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #074388;
+    transition: 300ms;
+}
+
+.underline:hover:after {
+    width: 100%;
+
+}
+
+.underline:not(:hover):after {
+    right: 0;
+    left: auto;
+}
+
+
+
+/* MODAL POPUP ---------------------------------- */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 990;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 15% auto;
+    padding: 20px;
+    /* border: 1.3px solid rgba(249, 195, 88); */
+    width: 35%;
+    /* Could be more or less, depending on screen size */
+    position: relative;
+    top: 10%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+
+
+}
+
+.modal-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: -15px;
+    padding: 5px 20px;
+}
+
+.modal-content h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 999;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #074388;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* SCROLLING BEE ----------------------- */
+
+#scrollingbee {
+    width: 80%;
+    position: absolute;
+    left: 8vw;
+    z-index: 200;
+    overflow: visible;
+}
+
+
+#scroll-path {
+    visibility: hidden;
+    overflow: visible;
+}
+
+
+#scroll-bee {
+    overflow: visible;
+    filter: drop-shadow(23px 15px 0px rgba(177, 154, 128, 0.15));
+}
+
+
+
+
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    height: 190vh;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+
+/* CELL NUMBER 1 ----- */
+
+.cell1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact-img {
+    width: 65%;
+    position: relative;
+    top: -4vw;
+}
+
+
+
+/* CELL NUMBER 2 ----- */
+
+.cell2 {
+    display: flex;
+    justify-content: center;
+    z-index: 900;
+}
+
+
+
+/* Contact form ------ */
+
+.contact-box {
+    /* width: 500px; */
+    width: 33vw;
+    height: 64vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 10px 20px 0 rgba(249, 195, 88, 0.7);
+    border-radius: 15px;
+    z-index: 900;
+}
+
+
+form {
+    margin: 35px;
+
+}
+
+
+.input-field {
+    /* width: 400px;
+    height: 40px; */
+    width: 26vw;
+    height: 5vh;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1.3px solid rgba(249, 195, 88);
+    border-radius: 15px;
+    outline: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+}
+
+
+
+.textarea-field {
+    height: 150px;
+    padding-top: 10px;
+    resize: none;
+}
+
+
+.button {
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #074388;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+/* CELL NUMBER 3 ----- */
+
+.cell3 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.social-img {
+    width: 55%;
+}
+
+
+
+
+/* CELL NUMBER 4 ----- */
+
+.cell4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 990;
+
+}
+
+
+
+.social-text h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.social-text {
+    position: relative;
+}
+
+
+.social-text ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: -25px;
+    margin-left: -25px;
+
+}
+
+
+
+.social-text li {
+    padding: 10px;
+
+}
+
+
+
+
+/* CELL NUMBER 5 ----- */
+
+.cell5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.door-portfolio {
+    width: 60%;
+
+}
+
+
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+
+.reveal.active {
+    opacity: 1;
+}
+
+
+
+
+/* CELL NUMBER 6 ----- */
+
+.cell6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 990;
+}
+
+
+.portfolio-text h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 15px;
+
+}
+
+
+.portfolio-text a {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+/* FENCE ILLUSTRATION -------- */
+
+
+.space {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+
+
+
+.img-bee {
+    width: 3%;
+    position: relative;
+
+    -webkit-animation: flyingbee 15s infinite;
+    -moz-animation: flyingbee 15s infinite;
+    -o-animation: flyingbee 15s infinite;
+    animation: flyingbee 15s infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+.img-fence-big {
+    width: 95%;
+    margin: 50px 5px;
+    z-index: 1;
+}
+
+
+.img-fence-small {
+    width: 95%;
+    display: none;
+    z-index: 1;
+}
+
+
+
+/* bee flying animation */
+
+@keyframes flyingbee {
+    0% {
+        transform: translate(0px, 0px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    20% {
+        transform: translate(290px, -68px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    40% {
+        transform: translate(500px, 60px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    60% {
+        transform: translate(820px, -63px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    80% {
+        transform: translate(1090px, 51px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    100% {
+        transform: translate(1350px, -46px) translate(-50%, -50%);
+    }
+}
+
+
+
+@-webkit-keyframes flyingbee {
+    0% {
+        transform: translate(0px, 0px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    20% {
+        transform: translate(290px, -68px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    40% {
+        transform: translate(500px, 60px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    60% {
+        transform: translate(820px, -63px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    80% {
+        transform: translate(1090px, 51px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    100% {
+        transform: translate(1350px, -46px) translate(-50%, -50%);
+    }
+}
+
+
+
+@-moz-keyframes flyingbee {
+    0% {
+        transform: translate(0px, 0px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    20% {
+        transform: translate(290px, -68px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    40% {
+        transform: translate(500px, 60px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    60% {
+        transform: translate(820px, -63px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    80% {
+        transform: translate(1090px, 51px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    100% {
+        transform: translate(1350px, -46px) translate(-50%, -50%);
+    }
+}
+
+
+
+@-o-keyframes flyingbee {
+    0% {
+        transform: translate(0px, 0px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    20% {
+        transform: translate(290px, -68px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    40% {
+        transform: translate(500px, 60px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    60% {
+        transform: translate(820px, -63px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    80% {
+        transform: translate(1090px, 51px) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+    }
+
+    100% {
+        transform: translate(1350px, -46px) translate(-50%, -50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* UP BUTTON ----------------------- */
+
+#btn-up {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 990;
+    border: none;
+    outline: none;
+    background-color: #074388;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px 0 rgba(249, 195, 88, 0.7);
+}
+
+#btn-up:hover {
+    background-color: rgb(249, 195, 88);
+    /* Add a dark-grey background on hover */
+
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERY --------------------- */
+
+
+/* smartphones media query */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    #wrapper {}
+
+
+    h1 {
+        font-size: 2em;
+    }
+
+
+    .stars-sky-left {
+        position: absolute;
+        top: 6vw;
+        left: 6vw;
+
+    }
+
+
+    .stars-sky-right {
+        position: absolute;
+        top: 5vw;
+        left: 80vw;
+    }
+
+
+    #star-1-right {
+        width: 25px;
+        left: 3vw;
+    }
+
+
+    ul.navbar {
+        font-size: 1.5em;
+        width: 90vw;
+    }
+
+
+
+    /* scrolling bee */
+
+    #scrollingbee {
+        display: none;
+    }
+
+
+
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+
+    .cell1 {
+        grid-row: 2;
+    }
+
+
+    .contact-img {
+        width: 95%;
+    }
+
+
+
+    .cell2 {
+        grid-row: 1;
+
+
+    }
+
+
+    .sec-contacts {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+
+    .contact-box {
+        width: 85vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .contact-box form {}
+
+
+    .input-field {
+        width: 90%;
+    }
+
+
+    #myBtn {}
+
+
+
+    .modal-content {
+        width: 80vw;
+    }
+
+
+
+    .social-img {
+        width: 75%;
+    }
+
+
+
+    .door-portfolio {
+        width: 95%;
+        margin-top: 50px;
+    }
+
+
+
+    .portfolio-text {
+        margin-top: -70px;
+    }
+
+
+
+    .space {
+        height: 70vh;
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .img-fence-big {
+        display: none;
+    }
+
+
+    .img-fence-small {
+        display: inline;
+        width: 135vw;
+        margin: 50px 5px;
+    }
+
+
+    .img-bee {
+        width: 10%;
+        top: -40vw;
+        left: -40vw;
+
+        -webkit-animation: flyingbee-short 5s infinite;
+        -moz-animation: flyingbee-short 5s infinite;
+        -o-animation: flyingbee-short 5s infinite;
+        animation: flyingbee-short 5s infinite;
+        animation-direction: alternate-reverse;
+    }
+
+
+
+
+    /* bee flying animation */
+
+    @keyframes flyingbee-short {
+        0% {
+            transform: translate(0px, 0px) translate(-50%, -50%);
+            animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+        }
+
+        50% {
+            transform: translate(187px, -113px) translate(-50%, -50%);
+            animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+        }
+
+        100% {
+            transform: translate(352px, 0.5px) translate(-50%, -50%);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* up button ---- */
+
+    #btn-up {
+        /* color: #113451;
+        font-weight: 600;
+        background-color: rgb(249, 195, 88); */
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* Medium devices - landscape tablets */
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+
+    .stars-sky-left {
+        top: 5vw;
+        left: 18vw;
+
+    }
+
+
+    .stars-sky-right {
+        top: 5vw;
+        left: 76vw;
+
+    }
+
+
+
+    #scrollingbee {
+        width: 95vw;
+        left: 0vw;
+    }
+
+
+
+
+
+    .grid {
+        max-width: 95vw;
+        height: 150vh;
+    }
+
+    .contact-img {
+        width: 95%;
+    }
+
+
+
+    .cell2 {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .contact-box {
+        width: 45vw;
+        height: 75%;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    .input-field {
+        width: 95%;
+        font-size: 1.2em;
+    }
+
+
+    #myBtn {
+        font-size: 1.3em;
+    }
+
+
+
+    .modal-content {
+        width: 75vw;
+    }
+
+
+    .modal-content h2 {
+        font-size: 2.5em;
+    }
+
+
+    .modal-content p {
+        font-size: 1.4em;
+    }
+
+
+
+    .social-img {
+        width: 110%;
+    }
+
+
+    .social-text {
+        font-size: 1.5em;
+    }
+
+
+
+    .door-portfolio {
+        width: 50vw;
+    }
+
+
+
+    .portfolio-text h2 {
+        font-size: 1.6em
+    }
+
+    .portfolio-text {
+        font-size: 1.4em
+    }
+
+
+
+
+
+    .space {
+        height: 50vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+
+
+    .img-fence-big {
+        display: none;
+    }
+
+
+    .img-fence-small {
+        display: inline;
+        width: 90vw;
+        margin: 10px 5px;
+    }
+
+
+
+    .img-bee {
+        width: 5%;
+        top: -25vw;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+/* For Large Screens */
+
+@media screen and (min-width: 1550px) {
+
+
+
+    h1 {
+        font-size: 3em;
+    }
+
+
+    ul.navbar {
+        font-size: 2.5rem;
+    }
+
+    .stars-sky-left {
+        left: 33vw;
+    }
+
+
+    .stars-sky-right {
+        left: 65vw;
+    }
+
+
+
+    /*    cell number 1*/
+
+    .contact-img {
+        width: 30vw;
+    }
+
+
+
+
+    /*    cell number 2*/
+
+
+    .contact-box {
+        max-height: 55vh;
+    }
+
+    .input-field {
+        font-size: 1.5em;
+    }
+
+    .input-field {
+        margin-top: 2.5vh;
+    }
+
+
+    #myBtn {
+        font-size: 1.5em;
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+
+
+    /*    cell number 3*/
+
+    .social-img {
+        width: 25vw;
+    }
+
+
+
+    /*    cell number 3 - social media text*/
+
+
+    .social-text h2 {
+        font-size: 1.5em;
+    }
+
+    .social-text {
+        font-size: 1.5em;
+    }
+
+
+
+    /*    cell number 4 - door*/
+
+    .door-portfolio {
+        width: 30vw;
+    }
+
+
+
+    /*    cell number 5 - portfolio text*/
+
+
+    .portfolio-text h2 {
+        font-size: 1.6em;
+    }
+
+    .portfolio-text {
+        font-size: 1.5em;
+
+    }
+
+
+
+
+    #btn-up {
+        font-size: 1.5em;
+    }
+
+
+}
