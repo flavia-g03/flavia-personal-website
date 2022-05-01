@@ -32,6 +32,12 @@ h1 {
 
 
 
+a:link {
+    color: #074388;
+}
+
+
+
 /* STARRY SKY -------------------------- */
 
 .stars-sky-left {
@@ -744,6 +750,7 @@ footer {
 
 
 footer a,
+footer a:link,
 footer a:active,
 footer a:hover,
 footer a:visited {
@@ -1535,6 +1542,14 @@ footer a:visited {
 
     #btn-up {
         font-size: 1.5em;
+    }
+
+
+
+    /*  SECTION - QUOTE ---------- */
+
+    .quote {
+        font-size: 1.5rem;
     }
 
 

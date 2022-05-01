@@ -63,6 +63,9 @@ h1 {
 } */
 
 
+a:link {
+    color: #074388;
+}
 
 a:visited,
 a:hover,
@@ -586,19 +589,20 @@ hr {
 
 
     .article h2 {
-        font-size: 3em;
+        font-size: 2.7rem;
 
     }
 
 
     .article p {
-        font-size: 1.4em;
+        font-size: 1.5rem;
     }
 
 
     .article h3 {
-        font-size: 2em;
+        font-size: 2.5rem;
     }
+
 
 
     .infographic a {

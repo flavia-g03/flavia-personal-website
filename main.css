@@ -33,6 +33,11 @@ h1 {
 }
 
 
+a:link{
+    color: #074388;
+}
+
+
 .planet-flavia {
     width: 25vw;
     padding: 20px;
@@ -498,6 +503,7 @@ footer {
 
 
 footer a,
+footer a:link,
 footer a:active,
 footer a:hover,
 footer a:visited {
@@ -917,7 +923,7 @@ footer a:visited {
 
 
     .article-card {
-        min-height: 44vh;
+        min-height: 48vh;
         min-width: 19vw;
         max-width: 20vw;
     }
