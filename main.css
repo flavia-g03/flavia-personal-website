@@ -564,7 +564,9 @@ footer a:visited {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    body {}
+    body{
+        margin: 0;
+    }
 
 
     #wrapper {
